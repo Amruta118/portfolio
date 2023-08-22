@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="about.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Starts-->
+    <header>
+        <a href="#" class="logo"><span>portfolio</span></a>
+        <nav class="navbar active">
+            <a href="index.html">Home</a>
+            <a href="skills.html">My Skill</a>
+            <a href="about.html">About</a>
+            <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" target="_blank">Tutorials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="contact.html" class="fa-solid fa-user"></a>
+
+        </div>
+    </header>
+    <!-- Header Section ends-->
+
+    <!--About section starts-->
+    <div class="main">
+        <div class="about_section">
+            <div class="about_text">
+                <div class="about_title">My carrer so far</div>
+                <div class="about_description">
+                    Started by web developement journey in 2022, when i was just
+                    introduced to the superb world of programming, from then the
+                    journey has been inevitable. Completed by Bachleors in Information
+                    technology in 2022 , i have gained a lot of expereince in this
+                    journey by doing some really fun projects and getting mentored by
+                    some really gret web dev tutors through their mentorhsip
+                    programmes. In awe to that , even i have been tutoring web
+                    developement to 100+ students as of now and would love to build
+                    projects and share my knowledge ahead.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About section ends-->
+
+    <!-- Social links-->
+    <div>
+        <div class="social_links">
+            <a href="https://github.com/Amruta118" target="_blank">
+                <img src="images/githublogo.png">
+            </a>
+            <a href="https://www.instagram.com/amruta_dhumal_11_/" target="_blank">
+                <img src="images/instagramlogo.png">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtubelogo.png">
+            </a>
+        </div>
+    </div>
+    <!-- Social links section ends-->
+
+    <!-- javascript section starts-->
+    <script>
+
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            menu.classList.toggle('fa-times');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            menu.classList.remove('fa-times');
+        }
+
+    </script>
+    <!-- javascript section ends-->
+</body>
+
+</html>

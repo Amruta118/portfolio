@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="skills.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Starts-->
+    <header>
+        <a href="#" class="logo"><span>portfolio</span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills.html">My Skill</a>
+            <a href="about.html">About</a>
+            <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" target="_blank">Tutorials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="contact.html" class="fa-solid fa-user"></a>
+
+        </div>
+    </header>
+    <!-- Header Section ends-->
+
+    <!-- MySkills Section Starts-->
+    <section class="my skills" id="my skills">
+        <div class="skill-heading">
+            <h3>Skills</h3>
+        </div>
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">HTML</div>
+                <div class="skill_percent">90%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="html"></div>
+            </div>
+        </div>
+
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">CSS</div>
+                <div class="skill_percent">85%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="css"></div>
+            </div>
+        </div>
+
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">JS</div>
+                <div class="skill_percent">80%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="js"></div>
+            </div>
+        </div>
+
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">BOOTSTRAP</div>
+                <div class="skill_percent">70%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="bootstrap"></div>
+            </div>
+        </div>
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">MYSQL</div>
+                <div class="skill_percent">50%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="mysql"></div>
+            </div>
+        </div>
+        <div class="skill_tab">
+            <div class="skill_info">
+                <div class="skill_name">PHP</div>
+                <div class="skill_percent">60%</div>
+            </div>
+            <div class="skill_bar">
+                <div class="skill_bar_progress" id="php"></div>
+            </div>
+        </div>
+    </section>
+    <!-- MySkills Section ends-->
+    <!-- Social links-->
+    <div>
+        <div class="social_links">
+            <a href="https://github.com/Amruta118" target="_blank">
+                <img src="images/githublogo.png">
+            </a>
+            <a href="https://www.instagram.com/amruta_dhumal_11_/" target="_blank">
+                <img src="images/instagramlogo.png">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtubelogo.png">
+            </a>
+        </div>
+    </div>
+    <!-- Social links section ends-->
+
+    <!-- javascript section starts-->
+    <script>
+
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            menu.classList.toggle('fa-times');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            menu.classList.remove('fa-times');
+        }
+
+    </script>
+    <!-- javascript section ends-->
+</body>
+
+</html>
